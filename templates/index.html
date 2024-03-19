@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenue</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Formulaire</h1>
-    <textarea id="inputText" rows="5" placeholder="Saisissez du texte..."></textarea>
-    <button id="submitButton">Valider</button>
-    <div id="imageContainer"></div>
-  </div>
 
-  <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <h1>Générer une image</h1>
+    <form>
+        <label for="prompt">Veuillez décrire l'image souhaitée</label>
+        <textarea id="prompt" rows="5" placeholder="Saisissez du texte..."></textarea>
+        <br>
+        <input type="submit" value="Valider">
+    </form>
+    <div id="image-container"></div>
+
 </body>
+
 </html>
